@@ -1,0 +1,56 @@
+<script>
+  function connectmetamask(){
+
+     try {
+
+       document.getElementById('btnconnectwallet').click();
+
+
+                       } 
+                       
+                       catch (err) {
+
+                       console.log("You're already connected")
+
+                       }
+
+                   }
+</script>
+
+<script>
+
+function tealandmint() {
+ try {
+
+   document.getElementById('btnmint').click();
+ }
+
+ catch (err) {
+   document.getElementById('btnconnectwallet').click();
+
+
+
+
+
+
+
+
+ }
+
+
+}
+</script>
+
+
+<div id="parentmintbtn"class="right-col">
+            <button id="htmlmintbtn" onclick="tealandmint();">
+            <a class="btn land-btn">
+                <img src="img/buy_nft.svg" alt="">
+            </a></button>
+            
+
+
+            <div><img class="forhtmlconnectwallet"  id="htmlconnectwallet"  src="/" alt=""  onClick="connectmetamask();" style="height:30%;width:30%"></div>
+
+
+            <div class="minttext">
